@@ -1,4 +1,4 @@
-# Flower-Resnet: A flower image recognition network based on the ResNet architecture
+# Flower-ResNet: A flower image recognition network based on the ResNet architecture
 This repository provides the official implementation of a floral image classification system based on the Deep Residual Network (ResNet) architecture. The project focuses on effectively extracting high-dimensional visual features from fine-grained natural images, overcoming the degradation problem inherent in deep convolutional networks.
 ## Overview
 Fine-grained image classification in natural environments presents significant challenges due to high intra-class variance and low inter-class variance among different flower species. 
