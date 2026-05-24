@@ -11,12 +11,20 @@ Flower Image Classification Dataset includes images of 14 types of flowers, cons
 
 ## 📁 Project Structure
 ```text
-├── dataset/                  # Dataset directory (10k+ images across 14 classes)
+├── dataset/
+│   └── flower/               # Dataset directory (10k+ images across 14 classes)
 ├── model/                    
 │   ├── model_resnet18.py     # ResNet18 architecture definition
 │   └── model_resnet34.py     # ResNet34 architecture with modified classification head
+├── predict/
+│   ├── predict_r18.py        # Single-image inference script for ResNet18
+│   └── predict_r34.py        # Single-image inference script for ResNet34
+├── cam_visualize/
+│   ├── cam_visualize_R18.py  # Grad-CAM tool to analyze ResNet18 spatial attention
+│   └── cam_visualize_R34.py  # Grad-CAM tool to analyze ResNet34 spatial attention
+├── confusion_matrix/         # Directory for evaluation scripts and matrix outputs
 ├── train_resnet18.py         # Training script for ResNet18 (featuring RandAugment)
 ├── train_resnet34.py         # Training script for ResNet34 (Transfer Learning focused)
-├── predict.py                # Single-image forward inference script
-├── confusion_matrix.py       # Evaluation script for generating publication-ready confusion matrices
-└── cam_visualize.py          # Grad-CAM tool for spatial attention visualization
+├── dataset.py                # Custom dataset loading and processing utility
+├── utils.py                  # Auxiliary functions for training pipelines and metrics
+└── requirements.txt          # Frozen environment dependencies
